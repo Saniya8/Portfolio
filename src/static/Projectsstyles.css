@@ -1,0 +1,201 @@
+.cover {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.projects-img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    object-fit: cover;
+}
+
+.cover::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.projects {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.projects .content {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+.content p {
+    font-size: 2.5rem;
+}
+
+.cards {
+    margin: auto;
+    max-width: 1040px;
+}
+
+.cards .cards-many{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cards .card-container1{
+    background-color: rgb(63, 63, 57);
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+    margin: 5rem;
+} 
+
+.cards .card-container2{
+    background-color: rgb(63, 63, 57);
+    display: grid;
+    /* grid-template-columns: auto auto auto auto; */
+    grid-gap: 10px;
+    padding: 10px;
+    margin: 5rem;
+} 
+
+.cards .card-container3{
+    background-color: rgb(63, 63, 57);
+    display: grid;
+    /* grid-template-columns: auto auto auto auto; */
+    grid-gap: 10px;
+    padding: 10px;
+    margin: 5rem;
+}
+
+.cards .card-container4{
+    background-color: rgb(63, 63, 57);
+    display: grid;
+    /* grid-template-columns: auto auto auto auto; */
+    grid-gap: 10px;
+    padding: 10px;
+    margin: 5rem;
+} 
+
+.cards img {
+    width: 100%;
+}
+
+.card-container .card-title{
+    margin-top: 3rem;
+    padding-right: auto;
+}
+
+.cards .btn {
+    padding: 1rem;
+    font-size: 2rem;
+    /* border-style: initial; */
+    border: none;
+    display: inline-block;
+    margin: auto;    
+}
+
+@media screen and (max-width:1040px) {
+    .projects-img {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        object-fit: cover;
+    }
+
+    .projects {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .projects .content {
+        position: absolute;
+        top: 22%;
+        left: 50%;
+        text-align: center;
+    }
+
+    .content h1 {
+        font-size: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .content p {
+        font-size: 2rem;
+    }
+
+    .cards {
+        margin: auto;
+        max-width: 1040px;
+    }
+    
+    .cards .cards-many{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .cards .card-container1{
+        background-color: rgb(63, 63, 57);
+        display: grid;
+        grid-gap: 10px;
+        padding: 10px;
+        margin: 5rem;
+    } 
+    
+    .cards .card-container2{
+        background-color: rgb(63, 63, 57);
+        display: grid;
+        grid-gap: 10px;
+        padding: 10px;
+        margin: 5rem;
+    } 
+    
+    .cards .card-container3{
+        background-color: rgb(63, 63, 57);
+        display: grid;
+        grid-gap: 10px;
+        padding: 10px;
+        margin: 5rem;
+    }
+    
+    .cards .card-container4{
+        background-color: rgb(63, 63, 57);
+        display: grid;
+        grid-gap: 10px;
+        padding: 10px;
+        margin: 5rem;
+    } 
+    
+    .cards img {
+        width: 100%;
+    }
+    
+    .card-container .card-title{
+        margin-top: 3rem;
+        padding-right: auto;
+    }
+    
+    .cards .btn {
+        margin: auto;
+        padding: 1rem;
+        font-size: 2rem;
+    }
+
+}

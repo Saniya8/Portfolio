@@ -1,0 +1,129 @@
+.cover {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.about-img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    object-fit: cover;
+}
+
+.cover::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.about {
+    height: 100%;
+    width: 100%;
+}
+
+.about .content {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+.about .content h1 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+.about .content-container p {
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-justify: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about .content-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about .content-container .border {
+    padding: 3.5rem;
+    width: 800px;
+    height: 340px;
+    border: 2px solid transparent;
+    border-image: linear-gradient(45deg, #ff0, #f0f, #f00, #00f, #0f0);
+    border-image-slice: 1;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+}
+
+@media screen and (max-width:1040px) {
+    .about-img {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        object-fit: cover;
+    }
+
+    .about {
+        height: 100%;
+        width: 100%;
+    }
+
+    .about .content {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 22%;
+        left: 50%;
+        text-align: center;
+    }
+
+    .about .content h1 {
+        font-size: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .about .content-container p {
+        font-size: 2rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-justify: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about .content-container {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about .content-container .border {
+        padding: 3.5rem;
+        width: 800px;
+        height: 590px;
+        border: 2px solid transparent;
+        border-image: linear-gradient(45deg, #ff0, #f0f, #f00, #00f, #0f0);
+        border-image-slice: 1;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+    }
+
+
+}
